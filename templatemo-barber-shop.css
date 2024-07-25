@@ -569,7 +569,7 @@ strong {
   BOOKING               
 -----------------------------------------*/
 .booking-section {
-  background-image: url('../images/vintage-chair-barbershop.jpg');
+  background-image: url('vintage-chair-barbershop.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
