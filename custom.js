@@ -46,9 +46,6 @@ function emailSend(){
     if(message=='OK'){
       swal("Successful!", "Fresh Icon will get your messages now.", "success");
     }
-    else{
-      swal("Error", "Make sure you fill all the informations well", "error");
-    }
   }
 );
 
