@@ -33,14 +33,6 @@
 
 function emailSend(){
 
-  var userName = document.getElementById('name').value;
-  var phone = document.getElementById('phone').value;
-  var email = document.getElementById('email').value;
-
-  var messageBody = "Name " + userName +
-  "<br/> Phone " + phone +
-  "<br/> Email " + email;
-  
   Email.send({
     Host : "smtp.elasticemail.com",
     Username : "devsammy3@gmail.com",
@@ -50,9 +42,14 @@ function emailSend(){
     Subject : "This is the subject",
     Body : "messageBody"
 }).then(
-  message => alert(message)
+  message => {
+    if(message=='OK'){
+      swal("Successful!", "Fresh Icon will get your messages now.", "success");
+    }
+    else{
+      swal("Error", "Make sure you fill all the informations well", "error");
+    }
+  }
 );
 
 }
-
-
